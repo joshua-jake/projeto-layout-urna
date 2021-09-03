@@ -1,7 +1,16 @@
+/* Criando uma animação para class-pisca para os numeros dentro do campo ficar piscando*/
+@keyframes pisca {
+    /* mexendo com opacidade do elemento */
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Deixando a urna centalizada no meio da tela com todo conteúdo dentro */
@@ -25,6 +34,9 @@ body {
     /* utilizando umas variações */
     background: linear-gradient(to right, #E8E8E8, #C1C1C1);
     border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+    
 
 }
 
@@ -96,6 +108,102 @@ body {
 .btn--confirma:hover {
     background-color: #78eea9;
     
+
+}
+
+
+.d-1 {
+    flex: 1;
+    display: flex;
+}
+
+.d-1-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.d-1-1 {
+    height:50px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.d-1-2 {
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* area dos digitos! */
+.d-1-3 {
+    height: 50px;
+   
+}
+
+.numero {
+    /* para que fique um lado do outro display inline-block */
+    display:inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    /* como usei o display inline-block não irei conseguir usar o diplay flex */
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    /* lembrar de criar uma animação */
+
+}
+
+/* Animação Pisca */
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    /* loop infinito */
+    animation-iteration-count: infinite;
+}
+
+.d-1-4 {
+    flex: 1;
+    
+    /* Espaçamento entre eles */
+    line-height: 30px;
+}
+
+
+.d-1-right {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.d-i-image {
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.d-i-image img {
+    width: 100%;
+}
+
+.d-i-image.small {
+    width: 80%;
+    font-size: 12px;
+}
+
+.d-2 {
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid #000;
+    padding-left: 10px;
 
 }
 
