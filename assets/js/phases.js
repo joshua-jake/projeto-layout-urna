@@ -3,7 +3,7 @@
 let phases = [
     {
         titles: 'VEREADOR',
-        numbers: 7,
+        numbers: 5,
         candidates: [
             {
                 number: 97458,
