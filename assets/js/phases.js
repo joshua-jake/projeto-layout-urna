@@ -6,20 +6,20 @@ let phases = [
         numbers: 5,
         candidates: [
             {
-                number: 97458,
+                numberr: '97458',
                 name: 'Joshua',
                 broken: 'JOSH',
                 photos:[
-                    {url:'14544.jpg', subtitle: 'councilor', small: false}
+                    {url:'prof2.png', subtitle: 'Vereador', small: false}
                 ]
 
             },
             {
-                number: 77547,
+                numberr: '77547',
                 name: 'Israel',
                 broken: 'ISRA',
-                PHOTOS: [
-                    {url:'77547', subtitle: 'councilor',}
+                photos: [
+                    {url:'mulher.png', subtitle: 'Vereador',}
                 ]
             },
 
@@ -30,7 +30,7 @@ let phases = [
         namber: 2,
         candidates: [
             {
-                number: 77,
+                numberr: '77',
                 name: 'Jesus',
                 broken: 'JESU',
                 vice: 'Jes',
